@@ -1,18 +1,17 @@
-#Sub Edit
-
+# Sub Edit
 This is a very simple tool for synchronizing the subtitles
 of a movie while watching it.
 
-##Compile
+## Compile
 
 Run `sbt assembly`.
 
-##Launch
+## Launch
 
 After compilation, 
 run `java -jar target/scala-2.12/sub-edit.jar`.
 
-##Usage
+## Usage
 
 * After have opened a subtitle file (*.srt) and
 the corresponding video, press `p` to start
