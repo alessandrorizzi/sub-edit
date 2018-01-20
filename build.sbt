@@ -2,7 +2,7 @@ name := "sub-edit"
 
 version := "0.1"
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.4"
 
 libraryDependencies += "uk.co.caprica" % "vlcj" % "3.10.1"
 
