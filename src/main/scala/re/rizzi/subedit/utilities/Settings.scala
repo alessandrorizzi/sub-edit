@@ -212,6 +212,7 @@ abstract class Settings(title : Symbol, localization: Localization) {
 
     result.setTitle(localization.tr(title));
     result.pack();
+    result.setLocationRelativeTo(frame);
     result.setVisible(true);
     result;
   }

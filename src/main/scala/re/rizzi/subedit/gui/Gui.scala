@@ -174,7 +174,7 @@ class Gui {
           updateTitle();
         case 'exitMenu => frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
         case 'settingsMenu => settings.show(frame);
-        case 'aboutMenu => new AboutDialog(localization);
+        case 'aboutMenu => new AboutDialog(localization, frame);
       }
   }
 

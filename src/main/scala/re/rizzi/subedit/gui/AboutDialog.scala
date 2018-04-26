@@ -18,11 +18,11 @@
 package re.rizzi.subedit.gui
 
 import java.awt.{GridBagConstraints, GridBagLayout}
-import javax.swing.{Icon, ImageIcon, JDialog, JLabel}
 
+import javax.swing._
 import re.rizzi.subedit.utilities.Localization
 
-class AboutDialog(localization: Localization) extends JDialog {
+class AboutDialog(localization: Localization, parent : JFrame) extends JDialog {
 
   private val icon : Icon = new ImageIcon(getClass.getResource("/logo.png"));
 
@@ -47,6 +47,7 @@ class AboutDialog(localization: Localization) extends JDialog {
 
   setTitle(localization.tr('aboutDialogTitle));
   setSize(400, 350);
+  setLocationRelativeTo(parent);
   setVisible(true);
 
 }
