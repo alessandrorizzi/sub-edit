@@ -160,6 +160,9 @@ class Gui {
       }
   }
 
+  private def showHelp() : Unit =
+    JOptionPane.showMessageDialog(frame, tr('helpDialogMessage), tr('helpDialogTitle), JOptionPane.INFORMATION_MESSAGE);
+
   private object MenuListener extends ActionListener {
     override def actionPerformed(actionEvent: ActionEvent): Unit =
       actionEvent.getSource.asInstanceOf[MenuItem].label match {
@@ -174,6 +177,7 @@ class Gui {
           updateTitle();
         case 'exitMenu => frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
         case 'settingsMenu => settings.show(frame);
+        case 'helpMenu => showHelp();
         case 'aboutMenu => new AboutDialog(localization, frame);
       }
   }
@@ -264,6 +268,7 @@ class Gui {
     menuBar.add(editMenu);
 
     val helpMenu = createMenu(tr('helpMenu));
+    addMenuItem('helpMenu, helpMenu).addActionListener(MenuListener);
     addMenuItem('aboutMenu, helpMenu).addActionListener(MenuListener);
     menuBar.add(helpMenu);
 

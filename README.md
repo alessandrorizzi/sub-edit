@@ -18,7 +18,7 @@ the corresponding video, press `p` to start
 playing the video.
 Press `p` again to pause the video.
 * Press `Space`to set the next subtitle.
-The next five subtitle are shown at the bottom of the window.
+The next five subtitles are shown at the bottom of the window.
 * Press `Space` when the next subtitle starts and hold it
 until the subtitle is active.
 * Press `n` and `m` to move the video 10 seconds back and forward.
