@@ -52,6 +52,7 @@ class Gui {
 
   private var isSpacePressed = false;
 
+  private val icon : ImageIcon = new ImageIcon(getClass.getResource("/icon.png"));
 
   private def tr(label : Symbol) : String = localization.tr(label);
 
@@ -280,6 +281,7 @@ class Gui {
     frame.add(subtitleView.panel, BorderLayout.PAGE_END);
     frame.setLocation(0, 0);
     frame.setExtendedState(Frame.MAXIMIZED_BOTH);
+    frame.setIconImage(icon.getImage);
     frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
     frame.addWindowListener(GuiWindowListener);
     frame.setSize(800, 600);
