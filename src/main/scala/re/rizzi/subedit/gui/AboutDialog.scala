@@ -22,7 +22,7 @@ import java.awt.{GridBagConstraints, GridBagLayout}
 import javax.swing._
 import re.rizzi.subedit.utilities.Localization
 
-class AboutDialog(localization: Localization, parent : JFrame) extends JDialog {
+class AboutDialog(localization: Localization, parent : JFrame) extends JDialog(parent) {
 
   private val icon : Icon = new ImageIcon(getClass.getResource("/logo.png"));
 
